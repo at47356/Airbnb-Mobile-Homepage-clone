@@ -1,1 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* border: solid red; */
+  font-family: 'Poppins', sans-serif;
+}
 
+.App {
+  width: 550px ;
+}
+
+.navbar-container {
+  padding: 22px 30px;
+  width: 100%;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.airbnblogo{
+  Width: 82px;
+  Height:25.35px
+}
+
+.photogrid {
+  max-width: 100%;
+  padding: 26px 77px 32px 77px;
+}
