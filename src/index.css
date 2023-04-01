@@ -24,3 +24,20 @@
   max-width: 100%;
   padding: 26px 77px 32px 77px;
 }
+
+.hero-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  padding-left: 32px;
+}
+
+.hero-info {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  padding: 16px 32px;
+}

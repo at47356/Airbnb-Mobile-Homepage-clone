@@ -3,12 +3,13 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Navb from './nav'
+import Hero from './Hero'
 
 function App() {
   return (
     <div className="App">
       <Navb/>
-      <img src="photo-grid.png" alt="photogrid" className="photogrid"  />
+      <Hero/>
     </div>
   )
 }
