@@ -1,15 +1,22 @@
-export default function Card() {
+export default function Card(props) {
     return(
         <div className="card">
-            <img src="./katie-zaferes.png" className="card-image" />
+            <img src={`${props.img}`} className="card-image" />
             <div className="card--stats">
                 <img src="./star.png" className="card-star" />
-                <span>5.0</span>
-                <span className="gray">(6) • </span>
-                <span className="gray">USA</span>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviews}) • </span>
+                <span className="gray">{props.location}</span>
             </div>
-            <p>Life Lessons with Katie Zaferes</p>
-            <p><span className="bold">From $136</span> / person</p>
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
+
+// img="./katie-zaferes.png"
+//         rating="5.0"
+//         reviews="6"
+//         location="USA"
+//         title="Life Lessons with Katie Zaferes"
+//         price="$136"
