@@ -12,12 +12,8 @@ import data from './data'
 function App() {
   const cards = data.map(card => {
     return <Card
-      title = {card.title}
-      price = {card.price}
-      img = {card.coverImg}
-      rating = {card.stats.rating}
-      reviews = {card.stats.reviewCount}
-      location = {card.location}
+      key={card.id} 
+      {...card}
     />
   })
 
@@ -25,7 +21,9 @@ function App() {
     <div className="App">
       <Navb/>
       <Hero/>
-      {cards}
+      <section className="cards-list">
+        {cards}
+      </section>
     </div>
   )
 }
